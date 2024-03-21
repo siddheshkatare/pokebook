@@ -1,0 +1,58 @@
+name: pokebook
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  auto_route: ^7.8.5
+  auto_size_text: ^3.0.0
+  cached_network_image: ^3.3.1
+  dio: ^5.4.1
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.4
+  flutter_svg: ^2.0.10+1
+  freezed: ^2.4.7
+  freezed_annotation: ^2.4.1
+  hydrated_bloc: ^9.1.4
+  jovial_svg: ^1.1.20
+  json_annotation: ^4.8.1
+  palette_generator: ^0.3.3+3
+  path_provider: ^2.1.2
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  auto_route_generator: ^7.3.2
+  build_runner: ^2.4.8
+  flutter_gen_runner: ^5.4.0
+  json_serializable: ^6.7.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+
+flutter_gen:
+  output: lib/src/assets_gen/
+  line_length: 80 
+  integrations:
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svgs/
+  fonts:
+    - family: Sofia Sans
+      fonts:
+        - asset: assets/fonts/SofiaSans-VariableFont_wght.ttf
+
