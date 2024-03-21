@@ -64,7 +64,9 @@ class PokemonListScreenBloc
         emit(
           state.copyWith(
             status: PokemonListScreenStatus.failed,
-            message: e.response?.data['message'] ?? 'Something went wrong',
+            message:
+                "${e.response?.statusCode} - ${e.response?.data ?? 'Something went wrong'}",
+            listModel: null,
           ),
         );
       } else {
