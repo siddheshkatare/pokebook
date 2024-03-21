@@ -1,5 +1,5 @@
 name: pokebook
-description: "A new Flutter project."
+description: "A new Flutter project to fetch data from PokeApi."
 publish_to: 'none'
 version: 0.1.0
 
